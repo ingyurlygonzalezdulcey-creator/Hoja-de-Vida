@@ -2,12 +2,19 @@
 
 Sitio personal con mi hoja de vida, mi hobby AE Floristería y mi sueño cumplido París. Desarrollado con HTML y CSS responsive Mobile First.
 
-🔗 **Sitio publicado:** https://TU-USUARIO.github.io/hoja-de-vida/
+🔗 **Sitio publicado:** https://ingyurlygonzalezdulcey-creator.github.io/hoja-de-vida/
 
 ## Páginas
-- index.html: hoja de vida (perfil, formación, experiencia, habilidades)
+- index.html: hoja de vida (perfil, formación, experiencia, habilidades, idiomas)
 - hobby.html: Mi hobby - AE Floristería y Eventos
 - paris.html: Mi sueño cumplido - París
+
+## Estructura del proyecto
+- index.html, hobby.html, paris.html
+- styles.css (Grid + Flexbox, Mobile First, R2-R4)
+- img/foto.jpg, img/floristeria.jpg, img/paris.jpg (R7 con alt)
+- mockups/ (R16)
+- capturas/ (R17)
 
 ## Mockups
 ### Hoja de vida - index.html
@@ -23,32 +30,35 @@ Sitio personal con mi hoja de vida, mi hobby AE Floristería y mi sueño cumplid
 ![París en computador](mockups/paris-computador.png)
 
 ## Capturas del sitio publicado
-R17 - Capturas en 2 dispositivos, una de dispositivo real
+R17 - 2 dispositivos, 1 real
 
-![Celular](capturas/celular.png)
+![Celular - dispositivo real](capturas/celular.png)
 ![Computador](capturas/computador.png)
 
-> Nota: Al menos una captura es de un celular real abriendo el link publicado.
-
 ## Breakpoints
-R18 - Explicación corta de mis breakpoints
-
-- **Base (celular):** Todo en una columna. grid-template-areas: cabecera, menu, principal, pie. Es Mobile First.
-- **Desde 600px:** Las tarjetas de habilidades pasan de 1 a 2 columnas con repeat(auto-fit, minmax(160px, 1fr)). El contenido crece.
-- **Desde 1024px:** El layout cambia: el menú pasa a la izquierda y el contenido principal a la derecha. Es donde se nota el cambio de grid-template-areas.
+R18
+- **Base (0-599px) celular:** Una columna. `grid-template-areas: "cabecera" "menu" "principal" "pie"`. Mobile First.
+- **600px:** Tarjetas de habilidades a 2 columnas con `repeat(auto-fit, minmax(160px, 1fr))`.
+- **1024px:** Layout de 2 columnas: menú 14rem a la izquierda, contenido 1fr a la derecha. `grid-template-areas: "cabecera cabecera" "menu principal" "pie pie"`.
 
 ## Cómo lo publiqué
-R19 - Pasos en mis palabras
+R19
+1. Creé repo público `hoja-de-vida` en minúsculas.
+2. Subí index.html, hobby.html, paris.html, styles.css, img/, mockups/, capturas/.
+3. Settings > Pages > Source: Deploy from a branch > Branch: main / root > Save.
+4. Esperé 3 min hasta que salió en verde "Your site is live".
+5. Probé en incógnito y en celular que cargaran las 3 imágenes y los 3 links del menú.
 
-1. Creé cuenta en GitHub y un repositorio público llamado hoja-de-vida.
-2. Subí mis archivos: index.html, hobby.html, paris.html, styles.css y carpetas img/, mockups/, capturas/ (todo en minúsculas).
-3. En el repositorio entré a Settings > Pages, en Branch elegí main y carpeta / (root).
-4. Esperé 2-3 minutos y GitHub me generó el link https://TU-USUARIO.github.io/hoja-de-vida/
-5. Verifiqué que el link abriera en incógnito y en mi celular, y que las imágenes de img/foto.jpg cargaran (error de mayúsculas).
+## DeepWiki / Documentación del código
+Este proyecto usa la Wiki de GitHub para explicar el CSS:
+- **Layout:** `styles.css` usa CSS Grid para `.sitio` y Flexbox para `.menu` y `.tarjetas`
+- **Responsive:** Mobile First + media queries 600px y 1024px
+- **Accesibilidad:** Imágenes con alt descriptivo, contraste y nav consistente en las 3 páginas (R7-R9)
+- **Validación:** HTML validado en validator.w3.org (R11)
 
 ## Fuentes consultadas
-- docs.github.com - GitHub Pages - Cómo activar Pages
-- MDN Web Docs - CSS Grid y grid-template-areas
+- docs.github.com - GitHub Pages
+- MDN Web Docs - CSS Grid, grid-template-areas
 - MDN Web Docs - repeat() y minmax()
-- W3C Validator - validator.w3.org para validar HTML
-- Figma - para hacer los mockups
+- validator.w3.org - Validación HTML
+- Figma - Mockups
