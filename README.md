@@ -55,7 +55,7 @@ Este proyecto usa la Wiki de GitHub para explicar el CSS:
 - **Responsive:** Mobile First + media queries 600px y 1024px
 - **Accesibilidad:** Imágenes con alt descriptivo, contraste y nav consistente en las 3 páginas (R7-R9)
 - **Validación:** HTML validado en validator.w3.org (R11)
-🔗 **DeepWiki Link:** https://ingyurlygonzalezdulcey-creator.github.io/hoja-de-vida/
+🔗 **DeepWiki Link:** https://deepwiki.com/ingyurlygonzalezdulcey-creator/hoja-de-vida
 
 ## Fuentes consultadas
 - docs.github.com - GitHub Pages
